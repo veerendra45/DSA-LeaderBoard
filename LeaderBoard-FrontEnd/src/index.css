@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* DSA Leaderboard Design System */
+
+@layer base {
+  :root {
+    /* Core Background & Text */
+    --background: 210 25% 98%;
+    --foreground: 215 25% 15%;
+
+    /* Card & Surface Colors */
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    /* Brand Colors - Tech Blue Theme */
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 217 91% 75%;
+    
+    /* Secondary - Coding Green */
+    --secondary: 142 76% 36%;
+    --secondary-foreground: 0 0% 100%;
+    
+    /* Accent - Purple for highlights */
+    --accent: 262 83% 58%;
+    --accent-foreground: 0 0% 100%;
+    
+    /* Status Colors */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Neutral Variants */
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    /* Interactive Elements */
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 217 91% 60%;
+
+    /* Platform-specific colors */
+    --leetcode: 255 45% 55%;
+    --gfg: 142 76% 36%;
+    --codechef: 38 92% 50%;
+
+    /* Difficulty Colors */
+    --easy: 142 76% 36%;
+    --medium: 38 92% 50%;
+    --hard: 0 84% 60%;
+
+    /* Design System Extensions */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(var(--muted)));
+    
+    --shadow-card: 0 4px 6px -1px hsl(var(--primary) / 0.1);
+    --shadow-elevated: 0 10px 25px -3px hsl(var(--primary) / 0.15);
+    --shadow-glow: 0 0 30px hsl(var(--primary) / 0.3);
+
+    --radius: 0.5rem;
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --card: 224 71% 6%;
+    --card-foreground: 213 31% 91%;
+    
+    --popover: 224 71% 6%;
+    --popover-foreground: 213 31% 91%;
+
+    --primary: 217 91% 70%;
+    --primary-foreground: 224 71% 4%;
+    --primary-glow: 217 91% 85%;
+    
+    --secondary: 142 76% 45%;
+    --secondary-foreground: 224 71% 4%;
+    
+    --accent: 262 83% 68%;
+    --accent-foreground: 224 71% 4%;
+    
+    --success: 142 76% 45%;
+    --success-foreground: 224 71% 4%;
+    
+    --warning: 38 92% 60%;
+    --warning-foreground: 224 71% 4%;
+    
+    --destructive: 0 84% 70%;
+    --destructive-foreground: 224 71% 4%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215 20% 65%;
+
+    --border: 223 47% 11%;
+    --input: 223 47% 11%;
+    --ring: 217 91% 70%;
+
+    --leetcode: 255 45% 65%;
+    --gfg: 142 76% 45%;
+    --codechef: 38 92% 60%;
+
+    --easy: 142 76% 45%;
+    --medium: 38 92% 60%;
+    --hard: 0 84% 70%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(var(--muted)));
+    
+    --shadow-card: 0 4px 6px -1px hsl(var(--primary) / 0.2);
+    --shadow-elevated: 0 10px 25px -3px hsl(var(--primary) / 0.25);
+    --shadow-glow: 0 0 30px hsl(var(--primary) / 0.4);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
