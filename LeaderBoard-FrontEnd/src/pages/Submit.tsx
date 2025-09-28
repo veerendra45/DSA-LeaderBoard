@@ -221,9 +221,8 @@ export default function Submit() {
                     <Input 
                       id="gfg" 
                       placeholder="https://practice.geeksforgeeks.org/user/username"
-                      disabled
                     />
-                    <Button variant="outline" size="sm" className="ml-2" disabled>
+                    <Button variant="outline" size="sm" className="ml-2">
                       <ExternalLink className="h-4 w-4" />
                     </Button>
                   </div>

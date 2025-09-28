@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Create an axios instance
 const api = axios.create({
-  baseURL: "http://localhost:8080/api", //backend base URL
+  baseURL: "https://leaderboard-backend.onrender.com/api", //backend base URL
   withCredentials: true,
 });
 
